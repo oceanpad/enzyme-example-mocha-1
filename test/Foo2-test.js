@@ -5,6 +5,6 @@ import Foo2 from '../src/Foo2';
 
 describe("A suite", function() {
   it("contains spec with an expectation", function() {
-    expect(shallow(<Foo2 />).containsAllMatchingElements(<button>)).to.equal(false);
+    expect(shallow(<Foo2 />).contains(<button/>)).to.equal(false);
   });
 });
