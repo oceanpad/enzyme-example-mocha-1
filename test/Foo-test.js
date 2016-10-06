@@ -5,6 +5,7 @@ import Foo from '../src/Foo';
 
 describe("A suite", function() {
   it("contains spec with an expectation", function() {
+		console.log(shallow(< Foo/>))
     expect(shallow(<Foo />).contains(<div className="foo" />)).to.equal(true);
   });
 
